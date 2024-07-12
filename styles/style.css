@@ -299,4 +299,5 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox::before {
   background-color: white;
   margin-left: 1px;
   margin-bottom: 1px;
+  
 }
