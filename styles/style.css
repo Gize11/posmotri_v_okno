@@ -173,10 +173,17 @@ button:has(:focus-visible) {
   font-weight: 400;
 }
 
-.content__video-card-description-container {
+/*У меня ни в одном браузере нет горизонтального скролла 
+  в списке карточек ) Но переделала. 
+  Сделала фикс ширину .content__video-card-description-container = 200px, тогда: 200px + ширина соседнего
+  .content__video-card-thumbnail 194px = 394px, что равно ширине всех родителей: .content__list-item = 
+  = content__card-link content__card-link_current = content__video-card
+  */
+
+.content__video-card-description-container { 
   padding: 3px;
   height: 100%;
-  max-width: 200px;
+  width: 200px;
 }
 
 .search-form__fieldset-title {
@@ -283,6 +290,9 @@ button:active {
 
 .search-form__label:hover {
   cursor: pointer;
+}
+
+.search-form__checkbox-list > .search-form__label:hover {
   text-decoration: underline;
 }
 
