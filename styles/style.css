@@ -93,6 +93,7 @@ button:has(:focus-visible) {
 
 .result__video-container {
   height: 386px;
+  width: 711px;
   margin-bottom: 16px;
   position: relative;
 }
@@ -105,12 +106,13 @@ button:has(:focus-visible) {
 }
 
 .content__details {
-  width: 400px;
   height: 100%;
+  width: 100%;
 }
 
 .content__video-card-thumbnail {
   width: 194px;
+  height: 103px;
 }
 
 .content__list {
@@ -136,7 +138,7 @@ button:has(:focus-visible) {
 
 .content__card-link_current {
   background-color: #545050;
-  width: 100%;
+  max-width: 394px;
 }
 
 .content__video-card:hover {
@@ -173,17 +175,10 @@ button:has(:focus-visible) {
   font-weight: 400;
 }
 
-/*У меня ни в одном браузере нет горизонтального скролла 
-  в списке карточек ) Но переделала. 
-  Сделала фикс ширину .content__video-card-description-container = 200px, тогда: 200px + ширина соседнего
-  .content__video-card-thumbnail 194px = 394px, что равно ширине всех родителей: .content__list-item = 
-  = content__card-link content__card-link_current = content__video-card
-  */
-
 .content__video-card-description-container { 
   padding: 3px;
   height: 100%;
-  width: 200px;
+  width: 100%;
 }
 
 .search-form__fieldset-title {
@@ -198,6 +193,7 @@ button:has(:focus-visible) {
   color: #ffffff;
   display: block;
   margin: 2px;
+  max-width: 400px;
 }
 
 .search-form__fieldset {
@@ -243,6 +239,7 @@ button:has(:focus-visible) {
 
 .button {
   appearance: none;
+  height: 34px;
   cursor: pointer;
   background-color: transparent;
   color: white;
@@ -278,6 +275,7 @@ button:active {
 
 .more-button {
   width: 399px;
+  margin: 2px;
 }
 
 .search-form__pseudo-checkbox {
